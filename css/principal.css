@@ -1,0 +1,202 @@
+/* Estilos globales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.6;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de imagen */
+.image-section {
+    flex: 1;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.120);
+    padding: 80px;
+}
+
+.image-section img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de metadatos */
+.metadata-section {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.120);
+    padding: 20px;
+}
+
+.metadata-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color:  white;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.metadata-section ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.metadata-section ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* Sección de opciones del usuario */
+.user-options {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.user-options h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.user-options form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.120);
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Alineación horizontal de las fechas */
+.user-options .form-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las fechas */
+}
+
+.user-options .form-options div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-options input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.user-options input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el botón */
+.user-options button {
+    padding: 12px 30px;
+    background-color: rgb(119, 187, 210);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-options button:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* Sección de datos Landsat y firma espectral */
+.landsat-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.landsat-sr, .spectral-signature {
+    flex: 1;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.120);
+    padding: 20px;
+}
+
+.spectral-signature img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de descarga */
+.download-options {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.120);
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.download-options h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.download-options button {
+    padding: 12px 30px;
+    background-color: rgb(119, 187, 210);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-options button:hover {
+    background-color: white;
+    transform: scale(1.05);
+}

@@ -1,0 +1,105 @@
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evitar scroll si el video es más grande que la pantalla */
+    background-color: black; /* Color de respaldo si el video no se carga */
+    flex-direction: column; /* Asegura que el contenido se coloque en columna (uno debajo del otro) */
+    position: relative; /* Para permitir posicionar el footer en la parte inferior */
+}
+
+/* Video de fondo */
+#videoBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Poner el video detrás del contenido */
+    object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+}
+
+/* Contenedor del contenido */
+.container {
+    text-align: center;
+    z-index: 1; /* Poner el contenido por encima del video */
+    color: white;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Coloca los elementos uno al lado del otro */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del título */
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Espacio entre el título y los botones */
+}
+
+/* Estilo de los botones */
+.button {
+    background-color: rgb(119, 187, 210);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px; /* Espacio entre los botones */
+    display: inline-block; /* Para que los botones se comporten bien en línea */ 
+    transition: background-color 0.3s;
+    width: 200px; /* Anchura fija de los botones */
+}
+
+/* Efecto hover en los botones */
+.button:hover {
+    background-color: rgb(119, 187, 210);
+}
+
+.button:focus {
+    outline: none;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 8px 16px;
+        width: 150px; /* Ajustar ancho para pantallas pequeñas */
+    }
+}
+
+/* Footer con referencia al video */
+.footer {
+    position: absolute; /* Coloca el footer en una posición fija */
+    bottom: 0; /* Alinea el footer al fondo de la página */
+    width: 100%;
+    color: rgb(0, 0, 0); /* Color del texto en negro */
+    font-size: 0.8rem;
+    z-index: 1; /* Asegura que el footer esté por encima del video */ 
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.378); /* Fondo blanco */
+    text-align: center; /* Alinea el texto del footer en el centro */
+}
+
+.footer a {
+    color: rgb(16, 0, 196); /* Color azul para los enlaces */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Subrayado cuando el mouse pasa por encima */
+}

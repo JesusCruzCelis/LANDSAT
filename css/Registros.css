@@ -1,0 +1,147 @@
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    padding: 20px;
+    background-image: url('https://images-assets.nasa.gov/image/iss072e004108/iss072e004108~medium.jpg'); /* Imagen de fondo de la NASA */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen de fondo al desplazarse */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+}
+
+/* Contenedor que agrupa el título y el formulario */
+.container {
+    text-align: center; /* Centrar el contenido dentro del contenedor */
+}
+
+/* Estilo del título principal */
+h1 {
+    margin-left: 640px;
+    color: rgb(0, 0, 0); /* Texto en blanco */
+    font-size: 2.5rem; /* Tamaño de letra */
+    font-weight: bold; /* Negrita para destacar el título */
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo de color negro */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes suavemente redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    display: inline-block; /* Asegura que el fondo solo cubra el texto */
+    margin-bottom: 20px; /* Margen inferior para separar el título del formulario */
+    width: fit-content; /* El ancho del título se ajusta al tamaño del texto */
+}
+
+/* Estilo del formulario */
+form {
+    background: rgba(255, 255, 255, 0.550);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Estilo de los contenedores dentro del formulario */
+div {
+    margin-bottom: 15px;
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo del mapa */
+#map {
+    height: 300px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Estilo del display de latitud y longitud */
+#latLonDisplay {
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo del botón general */
+button {
+    background-color: rgb(119, 187, 210);
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: red;
+}
+
+/* Mensajes de error */
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Quitar las flechas en el campo number para Webkit (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Estilo para el enlace como botón compacto sin borde */
+.button {
+    display: inline-block;
+    background-color: rgb(119, 187, 210); /* Color de fondo */
+    color: black;
+    padding: 10px 20px; /* Padding compacto */
+    border-radius: 6px; /* Bordes suavemente redondeados */
+    font-size: 16px; /* Texto más pequeño */
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Cambia los estilos del botón en hover */
+.button:hover {
+    background-color: rgb(16, 0, 196); /* Fondo azul oscuro */
+    color: white; /* Texto blanco */
+}
+
+/* Cambia los estilos cuando el botón está activo (clic) */
+.button:active {
+    background-color: rgb(0, 0, 128); /* Fondo más oscuro al hacer clic */
+    color: white;
+}
+
+/* Enfoque */
+.button:focus {
+    outline: none; /* Quita el borde de enfoque predeterminado */
+}

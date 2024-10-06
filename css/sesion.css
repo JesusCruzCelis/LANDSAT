@@ -1,0 +1,137 @@
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura total de la pantalla */
+    flex-direction: column; /* Alinea los elementos en columna */
+}
+
+/* Video de fondo */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Coloca el video detrás del contenido */
+    object-fit: cover; /* Cubre toda la pantalla */
+    opacity: 1; /* Opacidad completa */
+}
+
+/* Estilo del título "Iniciar Sesión" */
+h1 {
+    color: #333;
+    font-size: 2.5rem; /* Aumenta el tamaño del texto */
+    padding: 20px 40px; /* Padding para un recuadro más grande */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    border: 2px solid #ccc; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    width: fit-content; /* Ajusta el ancho al contenido */
+    margin-bottom: 30px; /* Espacio debajo para separarlo del formulario */
+    text-align: center;
+}
+
+/* Estilo del formulario */
+form {
+    background: rgba(255, 255, 255, 0.85); /* Fondo un poco más opaco */
+    padding: 60px 100px; /* Aumenta el padding para hacerlo más alto */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Aumenta el ancho máximo del formulario */
+    margin: 0 auto; /* Asegura que el formulario esté centrado horizontalmente */
+    z-index: 1; /* Coloca el formulario sobre el video */
+    position: relative;
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+div {
+    margin-bottom: 20px; /* Aumenta el espacio entre los campos del formulario */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1.1rem; /* Aumenta el tamaño de las etiquetas */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Aumenta el padding de los campos de entrada */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem; /* Aumenta el tamaño de texto en los inputs */
+}
+
+button {
+    background-color: rgb(119, 187, 210);
+    color: white;
+    border: none;
+    padding: 15px 20px; /* Aumenta el padding del botón */
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem; /* Aumenta el tamaño del texto del botón */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(16, 116, 189); /* Color azul más oscuro cuando pasa el cursor */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-link {
+    color: red; 
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.register-link:hover {
+    background-color: #286090;
+}
+
+/* Estilo del botón de regresar pequeño y en la esquina inferior izquierda */
+.back-button {
+    background-color: rgba(119, 187, 210, 0.9); /* Fondo semi-transparente */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    z-index: 10; /* Asegurar que esté sobre el video */
+    transition: background-color 0.3s, color 0.3s; /* Transición para el color de fondo y texto */
+}
+
+.back-button:hover {
+    background-color: blue; /* Fondo azul cuando pasa el cursor */
+    color: white; /* Texto blanco cuando pasa el cursor */
+}
